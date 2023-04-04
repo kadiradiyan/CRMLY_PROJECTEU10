@@ -90,10 +90,10 @@ public class UploadFileStepDefs {
     }
 
 
-
-
-
-
+    @Then("user  upload pictures")
+    public void userUploadPictures() {
+        uploadFilePages.uploadFile("jpg");
+    }
 }
 
 

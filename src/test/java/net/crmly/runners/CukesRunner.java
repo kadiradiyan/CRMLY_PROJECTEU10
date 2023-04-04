@@ -20,7 +20,7 @@ import org.junit.runner.RunWith;
         glue = "net/crmly/step_definitions",
         dryRun = false, // if true: not executing the step definitions
                         // if false: executing the step definitions
-        tags = "@wip,",
+        tags = "@wip",
 
         publish = false // when true --> publishes the tests online and the link can be shared with others, valid for a day
 )
