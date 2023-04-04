@@ -1,5 +1,6 @@
 
 # CRMLY10-253 US02
+@Smoke
 Feature: As a user, I should be able to upload files and pictures as messages
   Supported file formats .pdf, .txt, .jpeg, .gif, .png, .docx
 
