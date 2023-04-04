@@ -53,19 +53,19 @@ public class UploadFilePage {
         String filePath = "";
 
         if (string.equals("pgn")) {
-            filePath = "C:\\Users\\44777\\OneDrive\\Desktop\\LOGIN CREDENTIALS\\Screenshot 2023-02-27 141318.png";
+            filePath = "C:\\Users\\44777\\IdeaProjects\\CRMLY_PROJECTEU10\\src\\test\\resources\\png (2).png";
 
         } else if (string.equals("pdf")) {
-            filePath = "C:\\Users\\44777\\OneDrive\\Desktop\\LOGIN CREDENTIALS\\My_Cucumber_Framework_StepByStep.pdf";
+            filePath = "C:\\Users\\44777\\IdeaProjects\\CRMLY_PROJECTEU10\\src\\test\\resources\\pdf.pdf";
 
         } else if (string.equals("txt")) {
-            filePath = "C:\\Users\\44777\\OneDrive\\Desktop\\java programing B25\\Day48\\day48 class notes-1.txt";
+            filePath = "C:\\Users\\44777\\IdeaProjects\\CRMLY_PROJECTEU10\\src\\test\\resources\\txt.txt";
 
         } else if (string.equals("gif")) {
-            filePath = "C:\\Users\\44777\\OneDrive\\Desktop\\LOGIN CREDENTIALS\\gif.gif";
+            filePath = "C:\\Users\\44777\\IdeaProjects\\CRMLY_PROJECTEU10\\src\\test\\resources\\gif.gif";
 
         } else if (string.equals("jpg")) {
-            filePath = "C:\\Users\\44777\\OneDrive\\Desktop\\LOGIN CREDENTIALS\\Screenshot 2023-04-01 134706.jpg";
+            filePath = "C:\\Users\\44777\\IdeaProjects\\CRMLY_PROJECTEU10\\src\\test\\resources\\jpg.jpg";
 
         }
         uploadButton.sendKeys(filePath);
