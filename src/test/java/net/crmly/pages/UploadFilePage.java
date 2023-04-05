@@ -49,28 +49,27 @@ public class UploadFilePage {
 
 
     public void uploadFile(String string) {
+        String projectPath=System.getProperty("user.dir");
 
         String filePath = "";
 
         if (string.equals("pgn")) {
-            filePath = "C:\\Users\\44777\\IdeaProjects\\CRMLY_PROJECTEU10\\src\\test\\resources\\png (2).png";
+            filePath = projectPath+"\\"+"\\src\\test\\resources\\png (2).png";
 
         } else if (string.equals("pdf")) {
-            filePath = "C:\\Users\\44777\\IdeaProjects\\CRMLY_PROJECTEU10\\src\\test\\resources\\pdf.pdf";
+            filePath = projectPath+"\\"+"\\src\\test\\resources\\pdf.pdf";
 
         } else if (string.equals("txt")) {
-            filePath = "C:\\Users\\44777\\IdeaProjects\\CRMLY_PROJECTEU10\\src\\test\\resources\\txt.txt";
+            filePath=projectPath+"\\"+"\\src\\test\\resources\\txt.txt";
 
         } else if (string.equals("gif")) {
-            filePath = "C:\\Users\\44777\\IdeaProjects\\CRMLY_PROJECTEU10\\src\\test\\resources\\gif.gif";
+            filePath=projectPath+"\\"+"\\src\\test\\resources\\gif.gif";
 
         } else if (string.equals("jpg")) {
-            filePath = "C:\\Users\\44777\\IdeaProjects\\CRMLY_PROJECTEU10\\src\\test\\resources\\jpg.jpg";
+            filePath=projectPath+"\\"+"\\src\\test\\resources\\jpg.jpg";
 
         }
-        uploadButton.sendKeys(filePath);
-
+        uploadButton.sendKeys(filePath); }
 
     }
 
-}
