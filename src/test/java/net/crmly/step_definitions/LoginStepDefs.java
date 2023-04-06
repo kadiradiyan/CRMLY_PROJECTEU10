@@ -1,5 +1,6 @@
 package net.crmly.step_definitions;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import net.crmly.pages.LoginPage;
@@ -16,6 +17,8 @@ public class LoginStepDefs {
     public void user_logs_in_with_and(String userType) {
         loginPage.loginAsUserType(userType);
     }
+
+
      /*   LoginPage logInPage = new LoginPage();
 
 
