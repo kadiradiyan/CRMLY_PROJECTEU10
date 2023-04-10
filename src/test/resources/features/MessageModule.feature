@@ -1,3 +1,5 @@
+@CRMLY10-252
+  @smoke
 Feature: Message functionality
 
   User Story:
@@ -9,16 +11,20 @@ Feature: Message functionality
           "Please specify at least one person."
   More than one recipient can be added and are deletable.
 
+
+  @CRMLY10-285
   Background: User is already logged in.
     Given User logs into the platform
     When User logs in with "HR"
     Then User clicks MESSAGE module
 
+  @CRMLY10-276
   Scenario: User should be able to send a message by filling in the mandatory fields.
     Then User writes a message "message" into Message box
     And User clicks "Send" button
 
 
+  @CRMLY10-283
   Scenario:The message delivery should be to 'All employees' by default and should be changeable.
     Then User writes a message "message" into Message box
     And All Employees button should be seen as default recipient
@@ -28,6 +34,8 @@ Feature: Message functionality
     And User clicks "email" from the list
     And User clicks "Send" button
 
+
+  @CRMLY10-284
   Scenario: Verify that users SHOULD NOT be able to send a message without writing Message
     Then User does NOT write a Message Text
     And User clicks "Send" button
