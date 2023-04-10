@@ -1,5 +1,4 @@
 @CRMLY10-252
-  @smoke
 Feature: Message functionality
 
   User Story:
@@ -12,7 +11,6 @@ Feature: Message functionality
   More than one recipient can be added and are deletable.
 
 
-  @CRMLY10-285
   Background: User is already logged in.
     Given User logs into the platform
     When User logs in with "HR"
