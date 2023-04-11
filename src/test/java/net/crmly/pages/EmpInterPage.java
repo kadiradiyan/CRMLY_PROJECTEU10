@@ -11,7 +11,7 @@ public class EmpInterPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath = "//a[@id='blog-post-addc-add-455']")
+    @FindBy(xpath = "//a[@id='blog-post-addc-add-578']")
     public WebElement commentLinkOther;
 
     @FindBy(xpath = "//body[@style='min-height: 84px;']")
@@ -23,7 +23,7 @@ public class EmpInterPage {
     @FindBy(xpath = "//a[contains(text(),'Like')][1]")
     public WebElement likeLinkOther;
 
-    @FindBy(xpath = "//*[@id=\"log_entry_follow_1198\"]/a")
+    @FindBy(xpath = "//*[@id=\"log_entry_follow_1330\"]/a")
     public WebElement unfollowLinkOther;
 
     //////////////
