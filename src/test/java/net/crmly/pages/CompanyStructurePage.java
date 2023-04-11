@@ -46,7 +46,7 @@ public class CompanyStructurePage {
 
 
 
-
+/*
     public boolean isAddDepartmentButtonDisplayed() {
         try {
             return addDepartmentButton.isDisplayed();
@@ -54,6 +54,6 @@ public class CompanyStructurePage {
             return false;
         }
     }
-
+*/
 
 }
