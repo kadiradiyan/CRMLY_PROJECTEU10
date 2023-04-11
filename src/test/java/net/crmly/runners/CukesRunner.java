@@ -22,7 +22,7 @@ import org.junit.runner.RunWith;
                         // if false: executing the step definitions
 
 
-        tags = "@CRMLY10-271",
+        tags = "@smoke",
 
 
         publish = true // when true --> publishes the tests online and the link can be shared with others, valid for a day

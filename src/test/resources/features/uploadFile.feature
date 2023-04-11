@@ -24,7 +24,7 @@ Feature: As a user, I should be able to upload files and pictures as messages
       | jpg|
       | gif|
 
-  @CRMLY10-264
+  @CRMLY10-264 @smoke
  Scenario: User should be able to upload pictures.
   When user clicks  Upload files icon
   Then user  upload pictures

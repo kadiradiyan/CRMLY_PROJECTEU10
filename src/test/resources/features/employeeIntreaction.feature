@@ -15,7 +15,7 @@ Feature: Employee interaction on the posts functionality
     Then User likes other employees post by clicking "like" link
     Then User unfollows other employees post by clicking "unfollow" link
 
-  @CRMLY10-272
+  @CRMLY10-272 @smoke
   Scenario: User should be able to like and reply his/her own comment
     Then User likes his own comment by clicking "like" link under his comment
     Then User click "reply" link under his comment
