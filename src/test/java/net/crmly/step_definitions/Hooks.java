@@ -19,7 +19,7 @@ public class Hooks {    public static WebDriver driver;
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
-    @After
+   @After
     public void teardownScenario(Scenario scenario){
 
         if (scenario.isFailed()){
@@ -29,7 +29,7 @@ public class Hooks {    public static WebDriver driver;
             scenario.attach(screenshot,"image/png", scenario.getName());
         }
 
-        Driver.closeDriver();
+       Driver.closeDriver();
 
     }
 }

@@ -18,7 +18,6 @@ public class LoginStepDefs {
         loginPage.loginAsUserType(userType);
     }
 
-
      /*   LoginPage logInPage = new LoginPage();
 
 
