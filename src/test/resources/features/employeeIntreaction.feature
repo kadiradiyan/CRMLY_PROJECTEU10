@@ -7,7 +7,7 @@ Feature: Employee interaction on the posts functionality
     Given User logs into the platform
     When User logs in with "HR"
 
-  @CRMLY10-271
+  @CRMLY10-271 @smoke
   Scenario: User should be able to make a comment, like, or unfollow other employees' posts
     Then User clicks "comment" link under employees post
     Then User writes a "HEEEEY" in the comment under any other employees post

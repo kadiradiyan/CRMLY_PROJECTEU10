@@ -1,6 +1,5 @@
 
 # CRMLY10-253 US02
-@smoke
 Feature: As a user, I should be able to upload files and pictures as messages
   Supported file formats .pdf, .txt, .jpeg, .gif, .png, .docx
 
@@ -9,7 +8,7 @@ Feature: As a user, I should be able to upload files and pictures as messages
     When User logs in with "HR"
    Then user click on message button
 
-  @CRMLY10-262
+  @CRMLY10-262 @smoke
   Scenario: User should be able to upload multiple files at the same time (Test with max 3 files.).
     When user clicks  Upload files icon
     Then user Upload multiple files and images

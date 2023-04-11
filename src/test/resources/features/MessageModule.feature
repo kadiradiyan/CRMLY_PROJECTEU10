@@ -16,7 +16,7 @@ Feature: Message functionality
     When User logs in with "HR"
     Then User clicks MESSAGE module
 
-  @CRMLY10-276
+  @CRMLY10-276 @smoke
   Scenario: User should be able to send a message by filling in the mandatory fields.
     Then User writes a message "message" into Message box
     And User clicks "Send" button
