@@ -16,6 +16,7 @@ public class LoginStepDefs {
     public void user_logs_in_with_and(String userType) {
         loginPage.loginAsUserType(userType);
     }
+
      /*   LoginPage logInPage = new LoginPage();
 
 
