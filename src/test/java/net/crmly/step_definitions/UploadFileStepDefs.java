@@ -92,7 +92,9 @@ public class UploadFileStepDefs {
 
     @Then("user  upload pictures")
     public void userUploadPictures() {
+        BrowserUtils.waitFor(3);
         uploadFilePages.uploadFile("jpg");
+
     }
 }
 
