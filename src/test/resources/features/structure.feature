@@ -18,7 +18,7 @@ Feature: Company Structure Management
      Scenario: Login as a Helpdesk
       When User logs in with "Helpdesk"
 
-
+  @CRMLY10-277
   Scenario Outline: "<user_type>" user should be able to display company structure
       When User logs in with "<user_type>"
       When User clicks on "Employees" button
@@ -30,7 +30,7 @@ Feature: Company Structure Management
         | Helpdesk  |
         | Marketing |
 
-
+  @CRMLY10-278
   Scenario Outline: "<user_type>"  user should be able to add a department from the company structure
     When User logs in with "<user_type>"
     When User clicks on "Employees" button
@@ -58,7 +58,7 @@ Feature: Company Structure Management
      # | user_type |
       #| HR        |
 
-
+  @CRMLY10-280
   Scenario Outline: "<user_type>" user should be able to close add department modal at any time
     When User logs in with "<user_type>"
     When User clicks on "Employees" button
@@ -72,7 +72,7 @@ Feature: Company Structure Management
       | user_type |
       | HR        |
 
-
+  @CRMLY10-281
   Scenario Outline: "<user_type>" user can not change company structure
     When User logs in with "<user_type>"
     When User clicks on "Employees" button
@@ -83,6 +83,7 @@ Feature: Company Structure Management
       | Helpdesk  |
       | Marketing |
 
+  @CRMLY10-282
   Scenario Outline: "<user_type>" user should be able to see error message
   "Section name is not specified" from Company Structure (Negative test case)
     When User logs in with "<user_type>"
