@@ -12,7 +12,7 @@ Feature: Send Appreciation
     And User fills in the mandatory fields with "Thank you for your hard work!" in the message field
 
 
-  @CRMLY10-287  @smoke
+  @CRMLY10-287  @sendAppreciation
   # in this scenario we test first AC with US's descriptions -->Recipients should be selectable from "Recent", "Employees and departments"
   Scenario: User sends appreciation with mandatory fields
     And User clicks on the "Send" button
