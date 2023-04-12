@@ -1,5 +1,6 @@
 package net.crmly.step_definitions;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -18,7 +19,10 @@ public class LoginStepDefs {
         loginPage.loginAsUserType(userType);
     }
 
+//<<<<<<< CRMLY-Company_Structure_Rabia
 
+//=======
+//>>>>>>> master
      /*   LoginPage logInPage = new LoginPage();
 
 
