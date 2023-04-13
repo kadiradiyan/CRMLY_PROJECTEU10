@@ -51,11 +51,12 @@ public class AppreciationStepDefs {
         Driver.getDriver().switchTo().parentFrame();
     }
 
-    @And("User clicks on the {string} button")
+    @And("User click on the {string} button")
     public void user_clicks_on_the_button(String buttonName) {
         if (buttonName.equalsIgnoreCase("Send")) {
             appreciationPage.clickSendButton();
         } else if (buttonName.equalsIgnoreCase("Cancel")) {
+            BrowserUtils.waitFor(2);
             appreciationPage.clickCancelButton();
         }
     }
@@ -85,6 +86,7 @@ public class AppreciationStepDefs {
 
     @Then("User clicks on {string} button and clicks on {string} button")
     public void userClicksOnButtonAndClicksOnButton(String moreButton, String delete) {
+        BrowserUtils.waitFor(2);
         appreciationPage.moreButton.click();
         appreciationPage.deleteButton.click();
         Alert alert = Driver.getDriver().switchTo().alert();
