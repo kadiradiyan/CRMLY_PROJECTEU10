@@ -11,7 +11,7 @@ public class EmpInterPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath = "//a[@id='blog-post-addc-add-578']")
+    @FindBy(xpath = "(//a[starts-with(@id,'blog-post-addc-add')])[1]") //(//a[starts-with(@id,'blog-post-addc-add')])[1]
     public WebElement commentLinkOther;
 
     @FindBy(xpath = "//body[@style='min-height: 84px;']")
@@ -20,18 +20,18 @@ public class EmpInterPage {
     @FindBy(xpath = "//button[starts-with(@id,'lhe_button_submit_blogCommentForm')]")
     public WebElement sendBtnOther;
 
-    @FindBy(xpath = "//a[contains(text(),'Like')][1]")
+    @FindBy(xpath = "(//a[contains(text(),'Like')])[1]")
     public WebElement likeLinkOther;
 
-    @FindBy(xpath = "//*[@id=\"log_entry_follow_1330\"]/a")
+    @FindBy(xpath = "(//span[starts-with(@id,'log_entry_follow')])[1]")  //(//span[starts-with(@id,'log_entry_follow')])[1]
     public WebElement unfollowLinkOther;
 
     //////////////
 
-    @FindBy(xpath = "(//a[contains(text(),'Like')])[3]")
+    @FindBy(xpath = "(//div[@class = 'feed-com-informers-bottom']/span/span/a)[1]")  //(//div[@class = 'feed-com-informers-bottom']/span/span/a)[1]
     public WebElement likeOwnComment;
 
-    @FindBy(xpath = "//a[@id='record-BLOG_455-27-actions-reply']")
+    @FindBy(xpath = "(//a[starts-with(@id,'record-BLOG_')])[1]") //(//a[starts-with(@id,'record-BLOG_')])[1]
     public WebElement replyButtonOwnComment;
 
     @FindBy(xpath = "//body[@style='min-height: 84px;']")
@@ -42,8 +42,9 @@ public class EmpInterPage {
 
     /////////////
 
-    @FindBy(xpath = "(//span[@class='feed-post-more-text'])[4]")
+    @FindBy(xpath = "(//div[@class = 'feed-com-informers-bottom']/a/span)[1]") //(//div[@class = 'feed-com-informers-bottom']/a/span)[1]
     public WebElement moreLink;
+
 
     @FindBy(xpath = "//span[contains(text(), 'Edit')]")
     public  WebElement editButton;
@@ -51,14 +52,14 @@ public class EmpInterPage {
     @FindBy(xpath = "//body[@style='min-height: 84px;']")
     public WebElement editBox;
 
-    @FindBy(xpath = "(//button[@class='ui-btn ui-btn-sm ui-btn-primary'])[1]")
+    @FindBy(xpath = "(//button[@class='ui-btn ui-btn-sm ui-btn-primary'])[1]") //
     public WebElement sendAfterEdit;
 
-    @FindBy(xpath = "//span[contains(text(), 'Delete')]")
+    @FindBy(xpath = "//span[contains(text(),'Delete')]") //((//div[starts-with(@id, 'popup-window-content-menu-popup-action-')]/div/div/span)[4]/span)[2]
     public WebElement deleteComment;
 
 ////////
-    @FindBy(xpath = "//div[@id='log_entry_favorites_1198']")
+    @FindBy(xpath = "(//div[starts-with(@id,'log_entry_favorites')])[1]") //(//div[starts-with(@id,'log_entry_favorites')])[1]
     public WebElement addToFavourites;
 
 

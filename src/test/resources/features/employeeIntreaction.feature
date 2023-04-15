@@ -15,7 +15,7 @@ Feature: Employee interaction on the posts functionality
     Then User likes other employees post by clicking "like" link
     Then User unfollows other employees post by clicking "unfollow" link
 
-  @CRMLY10-272 @smoke
+  @CRMLY10-272
   Scenario: User should be able to like and reply his/her own comment
     Then User likes his own comment by clicking "like" link under his comment
     Then User click "reply" link under his comment
@@ -29,7 +29,8 @@ Feature: Employee interaction on the posts functionality
     Then User clicks "send" button after editing
     Then User clicks "more" link under his comment
     Then User clicks "delete" from the list of options
-    And User click "ok" button of the alert
+    Then User click "ok" button of the alert
+
 
   @CRMLY10-274
   Scenario: User should be able to add and remove others' posts to favorites by clicking on the Star icon
