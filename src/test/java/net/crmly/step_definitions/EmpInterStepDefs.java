@@ -110,8 +110,9 @@ public class EmpInterStepDefs {
 
     @Then("User clicks {string} from the list of options")
     public void user_clicks_from_the_list_of_options(String string) {
-        JavascriptExecutor executor = (JavascriptExecutor) Driver.getDriver();
-        executor.executeScript("arguments[0],click();", empInterPage.deleteComment);
+        //JavascriptExecutor executor = (JavascriptExecutor) Driver.getDriver();
+        //executor.executeScript("arguments[0],click()", empInterPage.deleteComment);
+        empInterPage.deleteComment.click();
 
 
         //BrowserUtils.clickWithJS(empInterPage.deleteComment);
